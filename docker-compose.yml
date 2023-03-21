@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  web:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      # command: 202205 PE Forecast-DSS-dev
+    entrypoint: bash -c "while true; do echo hello; sleep 60000; done"
+    environment:
+      -dbname = 'postgres'
+      -user = 'usrpostgres'
+      -password = ''
+      -host = ""
+      -port = 5432
+
+
