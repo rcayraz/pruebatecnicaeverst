@@ -15,5 +15,5 @@ WORKDIR .
 RUN python -m pip install --upgrade pip
 RUN python3 -m pip install -r requirements.txt
 RUN chmod +x /script-run.sh
-ENTRYPOINT ["python3","run_step.py"]
+ENTRYPOINT ["python3","main.py"]
 CMD []
