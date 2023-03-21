@@ -5,7 +5,7 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-      # command: 202205 PE Forecast-DSS-dev
+     
     entrypoint: bash -c "while true; do echo hello; sleep 60000; done"
     environment:
       -dbname = 'postgres'
